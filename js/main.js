@@ -1,32 +1,4 @@
-// // FORMULÁRIO
-// (function () {
-//     'use strict'
-//     var forms = document.querySelectorAll('.needs-validation')
-//     Array.prototype.slice.call(forms)
-//       .forEach(function (form )  {
-
-//         form.addEventListener('submit', function (event) {
-//           event.preventDefault()
-//           const inputName = document.getElementById('nome').value
-//         //  // if((inputName.length) != 0){
-
-//         //     if (!form.checkValidity()) {
-//         //       console.log ("teste")
-//         //       event.preventDefault()
-//         //       // event.stopPropagation()
-//         //     }
-//         //   }
-
-//           form.classList.add('was-validated')
-//         }, false)
-//       })
-//   })()
-
-//   $("#telefone").mask("(00) 0000-0000");
-//   $("#nome").mask("Digite seu nome completo");
-
-
-
+//FORMULÁRIO
 
 // Para fazer aparecer escrito "Campo obrigatório!"
 (function () {
@@ -66,30 +38,34 @@ form.addEventListener("submit", (event) => {
 });
 
 //CONTEÚDO
-const nameInput = document.getElementById("inputname");
+const nameInput = document.getElementById("inputname")
 const telInput = document.getElementById("inputtel")
-  nameInput.addEventListener("change", () => {
+  nameInput, telInput.addEventListener("change", () => {
     let att_target = button.getAttribute ("data-bs-target")
     let att_toggle = button.getAttribute ("data-bs-toggle")
 
 
-    if (nameInput.value == "") {
+    if (telInput.value && nameInput.value == "") {
       button.removeAttribute (att_target);
       button.removeAttribute (att_toggle);
       console.log(button.getAttribute("disable"))
       console.log("removeu");
-    } else if( nameInput != ""){
+    } else if( nameInput, telInput != ""){
       console.log ("Add")
       button.setAttribute("data-bs-target", "#exampleModalToggle2");
       button.setAttribute("data-bs-toggle", "modal");
     }
   });
 
+  
+
+
+  
+
 
   buttonBack.addEventListener("click", () =>{
     button.setAttribute("data-bs-target", "testeee");
       button.setAttribute("data-bs-toggle", "testee");
   })
-  $("#inputtel").mask("(00) 0000-0000");
-  $("#inputname").mask("Digite seu nome completo");
+  
   
