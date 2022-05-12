@@ -25,7 +25,27 @@
 //   $("#telefone").mask("(00) 0000-0000");
 //   $("#nome").mask("Digite seu nome completo");
 
-// FORMULÁRIO
+
+
+
+// Para fazer aparecer escrito "Campo obrigatório!"
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+//FORMULÁRIO
 const form = document.forms.nome;
 const button = document.getElementById("iniciarconversa");
 const buttonBack = document.getElementById("backToFirst");
@@ -44,7 +64,10 @@ form.addEventListener("submit", (event) => {
   console.log("teste");
   
 });
+
+//CONTEÚDO
 const nameInput = document.getElementById("inputname");
+const telInput = document.getElementById("inputtel")
   nameInput.addEventListener("change", () => {
     let att_target = button.getAttribute ("data-bs-target")
     let att_toggle = button.getAttribute ("data-bs-toggle")
@@ -62,7 +85,11 @@ const nameInput = document.getElementById("inputname");
     }
   });
 
+
   buttonBack.addEventListener("click", () =>{
     button.setAttribute("data-bs-target", "testeee");
       button.setAttribute("data-bs-toggle", "testee");
   })
+  $("#inputtel").mask("(00) 0000-0000");
+  $("#inputname").mask("Digite seu nome completo");
+  
