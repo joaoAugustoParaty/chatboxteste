@@ -83,3 +83,11 @@
    
     font-family: 'Poiret One', cursive;
 }
+
+/*____ Chat Box_____*/
+a.nav-link{
+    color: gray;
+    font-size: 18px;
+    padding: 0;
+}
+

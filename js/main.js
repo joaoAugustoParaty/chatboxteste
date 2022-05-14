@@ -20,8 +20,7 @@
 //FORMULÁRIO
 const form = document.forms.nome;
 const button = document.getElementById("iniciarconversa");
-const buttonBack = document.getElementById("backToFirst");
-button.setAttribute ("disable", true)
+
 
 let att_disable = button.getAttribute ("disable")
 console.log(typeof(att_disable))
@@ -45,7 +44,7 @@ const telInput = document.getElementById("inputtel")
     let att_toggle = button.getAttribute ("data-bs-toggle")
 
 
-    if (telInput.value && nameInput.value == "") {
+    if (telInput.value, nameInput.value == "") {
       button.removeAttribute (att_target);
       button.removeAttribute (att_toggle);
       console.log(button.getAttribute("disable"))
@@ -59,13 +58,4 @@ const telInput = document.getElementById("inputtel")
 
   
 
-
-  
-
-
-  buttonBack.addEventListener("click", () =>{
-    button.setAttribute("data-bs-target", "testeee");
-      button.setAttribute("data-bs-toggle", "testee");
-  })
-  
   
