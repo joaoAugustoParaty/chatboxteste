@@ -61,15 +61,7 @@
 
 /*____ MODAL_____*/
 
-.bi-x-lg{
-    border-radius:50px;
-    color:#FFF;
-    width:30px;
-	height:30px;
-    border: none;
-    background: #0e0872;
-    font-size:20px;
-}
+
 
 .modal-header{
     background: #0e0872;
@@ -91,3 +83,34 @@ a.nav-link{
     padding: 0;
 }
 
+a.nav-link:hover{
+    color:#e84118 !important;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e84118;
+    padding: 2px;
+    flex: none;
+}
+
+input:focus {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.icons{
+    margin-left: 125px;
+    
+}
+
+/*____ RESPONSIVE_____*/
+
+@media only screen and (max-width: 1200px)
+{
+    .modal{
+        margin-top: 8px;
+    }
+}
