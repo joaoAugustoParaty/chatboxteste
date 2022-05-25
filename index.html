@@ -41,7 +41,7 @@
   <!--Whatsapp Button-->
   <div class="whatsapp-container">
     
-    <a class="main-btn mt-2" data-bs-toggle="modal" id="btn-whatsapp" data-bs-target="#exampleModalToggle">
+    <a class="main-btn mt-2 d-flex" data-bs-toggle="modal" id="btn-whatsapp" data-bs-target="#exampleModalToggle">
      <div class="btn-info bg-transparent">
        Oi! Vamos conversar?
       <span class="bi-whatsapp ms-2" style="font-size: 30px;"></span>
@@ -52,19 +52,21 @@
   <!-- Modal Formulário -->
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="ModalLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content border-0">
         <div class="modal-header">
-          <h1 class="modal-title" id="ModalLabel"><span>UNE</span> Internet</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         <div class="text-center">
+           <img src="assets/images/UNE_Branco_Pantone.png" class="rounded w-50" alt="">
+         </div>
+          <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h5 class="sub-title text-center">Olá, seja bem vindo!</h5>
+          <h5 class="sub-title text-start">Olá, seja bem vindo!</h5>
         </div>
 
-        <form class="row needs-validation m-2" name="nome" id="formbase" autocomplete="on" novalidate>
+        <form class="row needs-validation m-1" name="nome" id="formbase" autocomplete="on" novalidate>
 
-          <div class="mb-1">
-            <label for="name" class="form-label">Nome:</label>
+          <div class="mt-1">
+            <label for="name" class="form-label">Nome</label>
             <input type="text" class="form-control" id="inputname" required>
             <div class="invalid-feedback">
               Campo obrigatório!
@@ -72,9 +74,9 @@
 
           </div>
 
-          <div class="mb-1">
-            <label for="tel" class="form-label">Celular:</label>
-            <input type="text" class="form-control" maxlength="15" placeholder="Ex.: (00) 0000-0000" id="inputtel"
+          <div class="mb-1 mt-1">
+            <label for="tel" class="form-label">Celular</label>
+            <input type="text" class="form-control" maxlength="15" placeholder="(00) 0000-0000" id="inputtel"
               required>
             <div class="invalid-feedback">
               Campo obrigatório!
@@ -83,7 +85,7 @@
 
 
           <div class="d-grid col-6 mx-auto m-2">
-            <button class="btn btn-success" type="submit" id="iniciarconversa">Iniciar conversa...</button>
+            <button class="btn" type="submit" id="iniciarconversa">Iniciar conversa<i class="bi bi-chat-fill"></i></button>
 
           </div>
         </form>

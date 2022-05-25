@@ -30,6 +30,7 @@
     color: #FFF;
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
     padding: 2px;
     margin: 6px;
@@ -45,20 +46,54 @@
 
 /*____ MODAL_____*/
 
+.modal-content{
+    border-radius: 40px 40px 40px 40px;
+    background: #f3f3f3;
+}
 
 
 .modal-header{
-    background: #0e0872;
+    background: #1e22aa;
+    border-radius: 40px 40px 0px 0px;
 }
 
-.modal-header h1{
-    color: #FFF;
-}
-
-.modal-header span{
+.btn-close{
+    background-color: #FFF;
+    border-radius: 50px;
+    width: 100px;
    
-    font-family: 'Poiret One', cursive;
 }
+
+.modal-body h5{
+    font-weight: bold;
+    font-size: 25px;
+   margin-top: 25px;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+#iniciarconversa{
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 20px;
+    display: flex;
+    background: linear-gradient(164deg, rgba(30,34,170,1) 0%, rgba(27,33,171,1) 94%);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#iniciarconversa i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
 
 /*____ Chat Box_____*/
 a.nav-link{
