@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .whatsapp-container{
     position:fixed;
-	max-width: 260px;
+	max-width: 280px;
     display: flex;
-	height:60px;
+	height:50px;
 	bottom:40px;
 	right:40px;
 	background: linear-gradient(164deg, rgba(100,192,67,1) 0%, rgba(102,191,61,1) 94%);
     border-radius: 50px;
-    font-size:30px;
 	box-shadow: 2px 2px 3px #999;
     z-index:100;
     cursor: pointer;
@@ -32,11 +32,10 @@
     align-items: center;
     text-align: center;
     display: flex;
-    padding: 2px;
-    margin: 6px;
+    
+    margin: 4px;
     font-weight: bold;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     
 
 }
@@ -55,12 +54,17 @@
 .modal-header{
     background: #1e22aa;
     border-radius: 40px 40px 0px 0px;
+    height: 100px;
+    
 }
+
+
 
 .btn-close{
     background-color: #FFF;
     border-radius: 50px;
-    width: 100px;
+    margin: auto;
+    
    
 }
 
@@ -78,7 +82,7 @@
     margin-top: 10px;
     font-weight: bold;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     background: linear-gradient(164deg, rgba(30,34,170,1) 0%, rgba(27,33,171,1) 94%);
     border: none;
@@ -107,12 +111,11 @@ a.nav-link:hover{
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #e84118;
-    padding: 2px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
     flex: none;
+    padding-left: 6px;
 }
 
 input:focus {
