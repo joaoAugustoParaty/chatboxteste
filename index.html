@@ -58,11 +58,11 @@
             <ul class="navbar-nav me-auto align-items-center">
               <li class="nav-item">
                 <a href="#!" class="nav-link">
-                  <div class="position-relative avatar p-2">
+                  <div class="position-relative avatar p-1">
                     <img src="assets/images/Brisa.png" class="img-fluid rounded-circle"
                       alt="">
                       <span
-                      class="position-absolute bottom-0 start-50 translate-middle p-2 rounded-circle" style="margin-left: 24px; margin-bottom: 0px; z-index: 100; width: 20px; background-color: #5ce561; height: 20px;">
+                      class="position-absolute bottom-0 start-50 translate-middle p-2 rounded-circle" style="margin-left: 23px; margin-bottom: 0px; z-index: 100; width: 20px; background-color: #5ce561; height: 20px;">
                       <span class="visually-hidden">New alerts</span>
                     </span>
                   </div>
@@ -80,33 +80,33 @@
          
           <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <h5 class="sub-title text-start">Olá, seja bem vindo!</h5>
+        <div class="modal-body p-2">
+          <h5 class="sub-title text-start ms-3">Ei, que bom te ver aqui!</h5>
         </div>
 
-        <form class="row needs-validation m-1" name="nome" id="formbase" autocomplete="on" novalidate>
+        <form class="row needs-validation m-2 mt-0" name="nome" id="formbase" autocomplete="on" novalidate>
 
           <div class="mt-0">
             <label for="name" class="form-label">Qual o seu nome?</label>
-            <input type="text" class="form-control" id="inputname" required>
+            <input type="text" class="form-control h-75" id="inputname" required style="border-radius: 15px;">
             <div class="invalid-feedback">
               Campo obrigatório!
             </div>
 
           </div>
 
-          <div class="mb-1 mt-2">
+          <div class="mb-1 mt-4">
             <label for="tel" class="form-label">E seu telefone?</label>
-            <input type="text" class="form-control" maxlength="15" placeholder="(00) 0000-0000" id="inputtel"
-              required>
+            <input type="text" class="form-control h-75" maxlength="15" placeholder="(00) 0000-0000" id="inputtel"
+              required style="border-radius: 15px;">
             <div class="invalid-feedback">
               Campo obrigatório!
             </div>
           </div>
 
 
-          <div class="d-grid col-6 mx-auto m-2">
-            <button class="btn" type="submit" id="iniciarconversa">Iniciar conversa<i class="bi bi-chat-fill"></i></button>
+          <div class="d-grid col-6 mx-auto m-4">
+            <button class="btn mt-4" type="submit" id="iniciarconversa">Iniciar conversa<i class="bi bi-chat-fill"></i></button>
 
           </div>
         </form>
