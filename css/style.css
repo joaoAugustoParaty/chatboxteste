@@ -100,15 +100,6 @@
 
 
 /*____ Chat Box_____*/
-a.nav-link{
-    color: gray;
-    font-size: 18px;
-    padding: 0;
-}
-
-a.nav-link:hover{
-    color:#e84118 !important;
-}
 
 .avatar {
     width: 100px;
