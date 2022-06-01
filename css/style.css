@@ -60,13 +60,7 @@
 
 
 
-.btn-close{
-    background-color: #FFF;
-    border-radius: 50px;
-    margin: auto;
-    
-   
-}
+
 
 .modal-body h5{
     font-weight: bold;
@@ -107,6 +101,20 @@
     border-radius: 50%; 
     flex: none;
     padding-left: 6px;
+}
+
+#btn-fatura, #btn-suporte, #btn-vendas{
+    font-weight: 400;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    background: linear-gradient(164deg, rgba(30,34,170,1) 0%, rgba(27,33,171,1) 94%);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 input:focus {

@@ -77,8 +77,9 @@
             
 
           </div>
-         
-          <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="close-button m-2 d-flex" style="background-color: #f3f3f3; border-radius: 50px; width: 30px; height: 30px;">
+          <button type="button" class="btn btn-close m-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
         </div>
         <div class="modal-body p-2">
           <h5 class="sub-title text-start ms-3">Ei, que bom te ver aqui!</h5>
@@ -114,152 +115,53 @@
     </div>
   </div>
 
-  <!-- Modal Chatbox -->
+  <!-- Modal Chatbox 2 -->
   <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
     tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered mx-auto">
-      <div class="modal-content">
-        <div class="card-header bg-transparent">
+    <div class="modal-dialog modal-dialog-centered p-2">
+      <div class="modal-content border-0">
+        <div class="modal-header" style="background: #f3f3f3; border: none;">
           <div class="navbar navbar-expand p-0">
             <ul class="navbar-nav me-auto align-items-center">
               <li class="nav-item">
                 <a href="#!" class="nav-link">
-                  <div class="position-relative"
-                    style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #e84118; padding: 2px">
-                    <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg"
-                      class="img-fluid rounded-circle" alt="">
-                    <span
-                      class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                  <div class="position-relative avatar p-1">
+                    <img src="assets/images/Brisa.png" class="img-fluid rounded-circle"
+                      alt="">
+                      <span
+                      class="position-absolute bottom-0 start-50 translate-middle p-2 rounded-circle" style="margin-left: 23px; margin-bottom: 0px; z-index: 100; width: 20px; background-color: #5ce561; height: 20px;">
                       <span class="visually-hidden">New alerts</span>
                     </span>
                   </div>
+        
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">
-                  <a href="#!" class="nav-link">Brisa</a>
-                </a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#!" class="nav-link">
-                  <i class="bi bi-telephone-fill"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">
-                  <i class="bi bi-camera-video-fill"></i>
-                </a>
-              </li>
-              <li class="nav-item mr-sm-2">
-                <a href="#!" class="nav-link">
-                  <button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                </a>
+              <li class="nav-item d-block align-content-center text-center justify-content-center mt-4">
+                <h4 class="text-start" style="color: black; font-weight: bold;">Brisa</h4>
+                <p class="text-start" style="margin-top: -15px; color: black;">Online</p>
               </li>
             </ul>
+            
 
           </div>
+          <div class="close-button m-2 d-flex" style="background-color: #1f24a6; border-radius: 50px; width: 30px; height: 30px;">
+            <button type="button" class="btn btn-close m-auto btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
         </div>
-        <div class="modal-body" style="height: 500px; overflow: auto;">
-          <div class="d-flex align-items-baseline mb-4">
-            <div class="position-relative avatar">
-              <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg" class="img-fluid rounded-circle"
-                alt="">
-              <span
-                class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-            <div class="pe-2">
-
-              <div class="card card-text d-inline-block p-2 px-3 m-1">Olá, seja bem vindo a UNE!</div>
-            </div>
+        <div class="modal-body p-4">
+          <h5 class="sub-title text-center" style="font-size: 20px; margin: auto;">Tudo bem? Em que posso te ajudar?</h5>
+          <div class="d-grid col-9 mx-auto mb-3 m-2">
+            <button class="btn mt-4 text-center" type="submit" id="btn-fatura">Fatura | 2ª via do boleto</button>
           </div>
-
-          <div class="d-flex align-items-baseline text-end justify-content-end mb-4">
-            <div class="pe-2">
-
-              <div class="card d-inline-block p-2 px-3 m-1">Escolha uma das alternativas abaixo.</div>
-            </div>
-            <div class="position-relative avatar">
-              <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg" class="img-fluid rounded-circle"
-                alt="">
-              <span
-                class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-
-          </div>
-
-          <div class="d-flex align-items-baseline mb-4">
-            <div class="position-relative avatar">
-              <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg" class="img-fluid rounded-circle"
-                alt="">
-              <span
-                class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-            <div class="pe-2">
-              <a class="btn btn-outline-warning d-inline-block p-2 px-3 m-1" id="suporte">Quero suporte.</a>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-baseline text-end justify-content-end mb-4">
-            <div class="pe-2">
-
-              <a class="btn btn-outline-primary d-inline-block p-2 px-3 m-1" id="contratar">Quero Contratar.</a>
-            </div>
-            <div class="position-relative avatar">
-              <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg" class="img-fluid rounded-circle"
-                alt="">
-              <span
-                class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-
-          </div>
-
-          <div class="d-flex align-items-baseline mb-4">
-            <div class="position-relative avatar">
-              <img src="https://nextbootstrap.netlify.app/assets/images/profiles/2.jpg" class="img-fluid rounded-circle"
-                alt="">
-              <span
-                class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-            <div class="pe-2">
-              <a class="btn btn-outline-success d-inline-block p-2 px-3 m-1" id="fatura">Fatura.</a>
-            </div>
-          </div>
-
-
+          <div class="d-grid col-9 mx-auto mb-3 m-2">
+          <button class="btn mt-4 text-center" type="submit" id="btn-suporte">Atendimento | Suporte</button>
         </div>
-        <div class="modal-footer bg-white position-absolute w-100 bottom-0 m-0 p-1">
-          <div class="input-group">
-            <div class="input-group-text bg-transparent border-0">
-              <button class="btn btn-light text-secondary">
-                <i class="bi bi-paperclip"></i>
-              </button>
-            </div>
-            <input type="text" class="form-control border-0" placeholder="Escreva a sua mensagem...">
-            <div class="input-group-text bg-transparent border-0">
-              <button class="btn btn-light text-secondary">
-                <i class="bi bi-emoji-smile"></i>
-              </button>
-            </div>
-            <div class="input-group-text bg-transparent border-0">
-              <button class="btn btn-light text-secondary">
-                <i class="bi bi-mic"></i>
-              </button>
-
-            </div>
-          </div>
+        <div class="d-grid col-9 mx-auto mb-3 m-2">
+          <button class="btn mt-4 text-center" type="submit" id="btn-vendas">Vendas | Quero ser UNE</button>
         </div>
+        </div>
+
+        
       </div>
 
 
