@@ -8,6 +8,7 @@
 
 a{
     text-decoration: none;
+    color: #FFF;
 }
 
 .whatsapp-container{
@@ -118,7 +119,8 @@ a{
     justify-content: center;
     align-items: center;
     height: 50px;
-    text-decoration: none;
+    width: 280px;
+    
 }
 
 
@@ -147,6 +149,10 @@ input:focus {
          #btn-fatura, #btn-suporte, #btn-vendas{
             font-size: 15px;
         }  
+
+        #exampleModalToggle2{
+            left: 90px;
+        }
 }
 
 @media only screen and (max-width: 600px){
@@ -167,8 +173,16 @@ input:focus {
         bottom: 0;
         z-index: 10040;
          }
-         }
+    
          #btn-fatura, #btn-suporte, #btn-vendas{
             font-size: 15px;
         }  
+
+        #exampleModalToggle2{
+        left: 0px;
+       
+        }
+
+        
+    }
 
