@@ -49,6 +49,7 @@ a{
 
 /*____ MODAL_____*/
 
+
 .modal-content{
     border-radius: 40px 40px 40px 40px;
     background: #f3f3f3;
@@ -136,53 +137,26 @@ input:focus {
 }
 
 /*____ RESPONSIVE_____*/
-
-@media only screen and (max-width: 1920px)
-{
-    .modal-dialog {  
-        position: absolute;
-        top: 120px;
-        left: 1380px;
+@media (min-width: 1640px) and (max-width: 1920px) { 
+    .modal-dialog{
+        top: 230px;
+        left: 685px;
         bottom: 0;
         z-index: 10040;
-         }
-         #btn-fatura, #btn-suporte, #btn-vendas{
-            font-size: 15px;
-        }  
-
-        #exampleModalToggle2{
-            left: 90px;
-        }
-}
-
-@media only screen and (max-width: 600px){
-    #btn-fatura, #btn-suporte, #btn-vendas{
-        font-size: 15px;
-    }  
-
-    #iniciarconversa{
-        font-size: 12px; 
-        display: flex;
     }
-
-    .modal-dialog {  
-       
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        bottom: 0;
-        z-index: 10040;
-         }
     
-         #btn-fatura, #btn-suporte, #btn-vendas{
-            font-size: 15px;
-        }  
+ }
 
-        #exampleModalToggle2{
-        left: 0px;
-       
-        }
 
-        
+ @media (min-width: 1200px) and (max-width: 1440px) { 
+    .modal-dialog{
+        top: 190px;
+        left: 435px;
     }
+    
+ }
+ 
+
+
+
 
