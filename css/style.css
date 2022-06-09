@@ -147,6 +147,35 @@ input:focus {
     
  }
 
+ @media (min-width: 1400px) and (max-width: 1850px) { 
+    .modal-dialog{
+        top: 200px;
+        left: 550px;
+        bottom: 0;
+        z-index: 10040;
+    }
+    
+ }
+
+ @media (min-width: 1550px) and (max-width: 1600px) { 
+    .modal-dialog{
+        top: 200px;
+        left: 500px;
+        bottom: 0;
+        z-index: 10040;
+    }
+    
+ }
+
+ @media (min-width: 1300px) and (max-width: 1380px) { 
+    .modal-dialog{
+        top: 200px;
+        left: 900px;
+        bottom: 0;
+        z-index: 10040;
+    }
+    
+ }
 
  @media (min-width: 1200px) and (max-width: 1440px) { 
     .modal-dialog{
